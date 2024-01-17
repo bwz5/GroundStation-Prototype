@@ -1,0 +1,15 @@
+{
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "elevation": 100.0,
+    "accel_x": 0.0,
+    "accel_y": 0.0,
+    "accel_z": 0.0,
+    "gyro_x": 0.0,
+    "gyro_y": 0.0,
+    "gyro_z": 0.0,
+    "mag_x": 0.0,
+    "mag_y": 0.0,
+    "mag_z": 0.0,
+    "temp": 100.0
+}
