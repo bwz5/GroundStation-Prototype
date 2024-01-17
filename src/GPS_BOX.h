@@ -9,7 +9,7 @@
 #include <FL/Fl_Image.H>
 #include <iostream>
 
-#define WIDTH 1000 // defines the width and the height for the entire window 
+#define WIDTH 1400 // defines the width and the height for the entire window 
 #define HEIGHT 800
 
 /**

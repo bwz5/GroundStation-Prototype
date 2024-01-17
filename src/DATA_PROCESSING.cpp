@@ -10,43 +10,63 @@
 #include <json/json.h>
 #include <json/value.h>
 
+    std::map <std::string, double> setup::serialValues;
+ 
 setup::setup(){
-    serialValues["latitude"] = 0.0; 
-    serialValues["longitude"] = 0.0; 
-    serialValues["elevation"] = 0.0; 
-    serialValues["accel_x"] = 0.0; 
-    serialValues["accel_y"] = 0.0; 
-    serialValues["accel_z"] = 0.0; 
-    serialValues["gyro_x"] = 0.0; 
-    serialValues["gyro_y"] = 0.0; 
-    serialValues["gyro_z"] = 0.0; 
-    serialValues["mag_x"] = 0.0; 
-    serialValues["mag_y"] = 0.0; 
-    serialValues["mag_z"] = 0.0; 
-    serialValues["temp"] = 100.0;  
 }
 
-void setup::serialRead(){
+std::string setup::serialRead(){
+    std::string jsonString; 
+
      #ifndef WIRING_PI
 
         #include <wiringPi.h> 
         #include <wiringSerial.h> 
 
-        wiringPiSetupGpio();
+        wiringPiSetup();
+
+        int serialPort;
+
+        jsonString.clear(); 
+
+        // Open the serial port (adjust the port name and baud rate as needed)
+        if ((serialPort = serialOpen("/dev/ttyS0", 9600)) < 0) {
+            std::cout << "Unable to open serial port\n" << std::endl;
+        }
+        // Read serial data and store it in a string
+        char incomingChar;
+
+        while (true) {
+            if (jsonString.length() < 255) {  // Limit the string length to avoid overflow
+
+                // Read character by character until a newline character is encountered
+                while ((incomingChar = serialGetchar(serialPort)) != '\n') {
+                    jsonString += incomingChar;
+                }
+            } else {
+                // Handle the case where the string is too long
+                std::cout << "Received data is too long, clearing buffer\n";
+                jsonString.clear();
+            }
+        }
+
+        // Close the serial port (this will never be reached in this example)
+        serialClose(serialPort);
 
     #endif
+
+    return jsonString; 
 }
 
 void setup::jsonStringToMap(const std::string& jsonString) {
 
     Json::Reader reader;
-  Json::Value root;
+    Json::Value root;
 
   bool parseSuccess = reader.parse(jsonString, root, false);
 
   if (parseSuccess)
   {
-    fl_message("parsing successful"); 
     serialValues["latitude"] = root["latitude"].asDouble(); 
     serialValues["longitude"] = root["longitude"].asDouble(); 
     serialValues["elevation"] = root["elevation"].asDouble(); 

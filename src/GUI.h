@@ -19,15 +19,51 @@ class GUI {
         Fl_Chart *altitudeChart;
         GPS_BOX *GPS;
         Fl_Button *startButton;
-        Fl_Text_Display *longitudeDisplay;
-        Fl_Text_Display *latitudeDisplay;
         Fl_Chart *tempChart;
-        Fl_Box *testBox;
-
         setup DataProcessing; 
 
-    public:
-   
+        //The text displays for a GUI Object
+        Fl_Text_Display *longitudeDisplay;
+        Fl_Text_Display *latitudeDisplay;
+
+        Fl_Text_Display *elevationDisplay; 
+        Fl_Text_Display *tempDisplay; 
+
+        Fl_Text_Display *accel_x_Display; 
+        Fl_Text_Display *accel_y_Display; 
+        Fl_Text_Display *accel_z_Display; 
+
+        Fl_Text_Display *gyro_x_Display; 
+        Fl_Text_Display *gyro_y_Display; 
+        Fl_Text_Display *gyro_z_Display; 
+
+        Fl_Text_Display *mag_x_Display; 
+        Fl_Text_Display *mag_y_Display; 
+        Fl_Text_Display *mag_z_Display; 
+
+        //The Text Displays' respective buffers 
+        Fl_Text_Buffer gyro_x_Buffer; 
+        Fl_Text_Buffer gyro_y_Buffer; 
+        Fl_Text_Buffer gyro_z_Buffer; 
+
+
+        Fl_Text_Buffer elevationBuffer; 
+        Fl_Text_Buffer tempBuffer; 
+
+        Fl_Text_Buffer longitudeBuffer; 
+        Fl_Text_Buffer latitudeBuffer; 
+
+        Fl_Text_Buffer accel_x_Buffer; 
+        Fl_Text_Buffer accel_y_Buffer; 
+        Fl_Text_Buffer accel_z_Buffer; 
+
+        Fl_Text_Buffer mag_x_Buffer; 
+        Fl_Text_Buffer mag_y_Buffer; 
+        Fl_Text_Buffer mag_z_Buffer;
+
+        int position; 
+
+    public:   
    /**
     * Creates the GUI window and the components that will go in the window. 
    */
@@ -38,4 +74,10 @@ class GUI {
     */
     void show(); 
     void end(); 
+
+    void graphCurrentPosition(); 
+
+    void updateDisplays();
+
+    void eventLoop(); 
 }; 
