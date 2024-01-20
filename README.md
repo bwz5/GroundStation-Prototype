@@ -17,7 +17,7 @@ Cornell Rocketry 2024 GroundStation. Uses FLTK for the GUI components, JSONCPP t
 <h2>Examples of the GUI</h2>
 
 <br>
-<img width="1398" alt="Screenshot 2024-01-17 at 4 30 49 PM" src="https://github.com/bwz5/GroundStation/assets/143123593/bc1b1896-eb7d-4122-9dd5-654fb3829a13">
+<img width="1399" alt="image" src="https://github.com/bwz5/GroundStation/assets/143123593/94e90e3d-2228-47ba-a1e5-3aff22f252bd">
 
 <br>
 <h2>Use</h2><br>
