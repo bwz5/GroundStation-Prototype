@@ -1645,6 +1645,7 @@ CMakeFiles/GroundStation.dir/src/GPS_BOX.cpp.o: /Users/benjaminzou/Desktop/Groun
   /usr/local/include/FL/Fl_Graphics_Driver.H \
   /usr/local/include/FL/Fl_Group.H \
   /usr/local/include/FL/Fl_Image.H \
+  /usr/local/include/FL/Fl_PNG_Image.H \
   /usr/local/include/FL/Fl_Pixmap.H \
   /usr/local/include/FL/Fl_Plugin.H \
   /usr/local/include/FL/Fl_Preferences.H \
@@ -2479,6 +2480,9 @@ CMakeFiles/GroundStation.dir/src/GUI.cpp.o: /Users/benjaminzou/Desktop/GroundSta
   /usr/local/include/FL/Fl_Graphics_Driver.H \
   /usr/local/include/FL/Fl_Group.H \
   /usr/local/include/FL/Fl_Image.H \
+  /usr/local/include/FL/Fl_Input.H \
+  /usr/local/include/FL/Fl_Input_.H \
+  /usr/local/include/FL/Fl_PNG_Image.H \
   /usr/local/include/FL/Fl_Pixmap.H \
   /usr/local/include/FL/Fl_Plugin.H \
   /usr/local/include/FL/Fl_Preferences.H \
@@ -3345,6 +3349,9 @@ CMakeFiles/GroundStation.dir/src/main.cpp.o: /Users/benjaminzou/Desktop/GroundSt
   /usr/local/include/FL/Fl_Graphics_Driver.H \
   /usr/local/include/FL/Fl_Group.H \
   /usr/local/include/FL/Fl_Image.H \
+  /usr/local/include/FL/Fl_Input.H \
+  /usr/local/include/FL/Fl_Input_.H \
+  /usr/local/include/FL/Fl_PNG_Image.H \
   /usr/local/include/FL/Fl_Pixmap.H \
   /usr/local/include/FL/Fl_Plugin.H \
   /usr/local/include/FL/Fl_Preferences.H \
@@ -3370,6 +3377,10 @@ CMakeFiles/GroundStation.dir/src/main.cpp.o: /Users/benjaminzou/Desktop/GroundSt
 
 /Users/benjaminzou/Desktop/GroundStation/src/main.cpp:
 
+/usr/local/include/FL/Fl_Input_.H:
+
+/usr/local/include/FL/Fl_Input.H:
+
 /Users/benjaminzou/Desktop/GroundStation/src/GUI.cpp:
 
 /usr/local/include/FL/fl_draw.H:
@@ -3391,6 +3402,8 @@ CMakeFiles/GroundStation.dir/src/main.cpp.o: /Users/benjaminzou/Desktop/GroundSt
 /usr/local/include/FL/Fl_Rect.H:
 
 /usr/local/include/FL/Fl_RGB_Image.H:
+
+/usr/local/include/FL/Fl_PNG_Image.H:
 
 /usr/local/include/FL/Fl_Group.H:
 

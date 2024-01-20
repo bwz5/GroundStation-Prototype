@@ -24,7 +24,6 @@ int main(int argc, char **argv) {
     gui.show(); 
     gui.end(); 
 
-
     return Fl::run();
 }
 

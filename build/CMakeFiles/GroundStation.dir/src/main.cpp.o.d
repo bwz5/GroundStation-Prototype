@@ -831,8 +831,10 @@ CMakeFiles/GroundStation.dir/src/main.cpp.o: \
   /opt/homebrew/Cellar/jsoncpp/1.9.5/include/json/writer.h \
   /Users/benjaminzou/Desktop/GroundStation/src/GUI.h \
   /Users/benjaminzou/Desktop/GroundStation/src/GPS_BOX.h \
+  /usr/local/include/FL/Fl_PNG_Image.H \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/iostream \
   /Users/benjaminzou/Desktop/GroundStation/src/DATA_PROCESSING.h \
+  /usr/local/include/FL/Fl_Input.H /usr/local/include/FL/Fl_Input_.H \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/fstream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/filesystem \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__filesystem/copy_options.h \

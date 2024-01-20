@@ -7,6 +7,8 @@
 #include <FL/Fl_Timer.H>
 #include <FL/Fl_Text_Display.H>
 #include <FL/Fl_Image.H>
+#include <FL/Fl_PNG_Image.H>
+
 #include <iostream>
 
 #define WIDTH 1400 // defines the width and the height for the entire window 
@@ -20,11 +22,15 @@ class GPS_BOX
         public Fl_Box
     {
     public:
+
     //denotes the positions of the image 
     double top_left_latitiude = 32.990547; 
     double bottom_right_latitude = 32.909900; 
     double top_left_longitude = -107.007395;
     double bottom_right_longitude = -106.869876; 
+
+    int currentX; 
+    int currentY; 
 
     // bottom right = 32.91167280121341, -106.88529755805972
     // top left = 32.989980839081575, -106.99281940290523
@@ -50,5 +56,7 @@ class GPS_BOX
      * a ratio with respect to the total possible measurements that the image has, and then
      * multiplies that by the image width to get the correct pixel. 
     */
-    void drawRocketPosition();
+    void drawRocketPosition(); 
+
+    
 };

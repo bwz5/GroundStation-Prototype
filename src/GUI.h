@@ -9,6 +9,8 @@
 #include <FL/Fl_Image.H>
 #include "GPS_BOX.h"
 #include "DATA_PROCESSING.h"
+#include <FL/Fl_Input.H>
+
 
 
 
@@ -41,7 +43,11 @@ class GUI {
         Fl_Text_Display *mag_y_Display; 
         Fl_Text_Display *mag_z_Display; 
 
+        Fl_Text_Display *timeDisplay; 
+
         //The Text Displays' respective buffers 
+        Fl_Text_Buffer timerBuffer; 
+
         Fl_Text_Buffer gyro_x_Buffer; 
         Fl_Text_Buffer gyro_y_Buffer; 
         Fl_Text_Buffer gyro_z_Buffer; 
@@ -63,6 +69,9 @@ class GUI {
 
         int position; 
 
+        Fl_Input *input; 
+        Fl_Button *button; 
+
     public:   
    /**
     * Creates the GUI window and the components that will go in the window. 
@@ -80,4 +89,6 @@ class GUI {
     void updateDisplays();
 
     void eventLoop(); 
+
+    static int timeValue; 
 }; 

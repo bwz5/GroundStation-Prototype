@@ -1,0 +1,8 @@
+# Build directories
+**/build/
+
+# macOS
+**/.DS_Store
+
+# VS Code
+.vscode/

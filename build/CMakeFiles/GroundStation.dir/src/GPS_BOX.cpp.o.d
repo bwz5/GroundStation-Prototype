@@ -82,6 +82,7 @@ CMakeFiles/GroundStation.dir/src/GPS_BOX.cpp.o: \
   /usr/local/include/FL/Fl_Text_Buffer.H \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/stdarg.h \
   /Users/benjaminzou/Desktop/GroundStation/src/GPS_BOX.h \
+  /usr/local/include/FL/Fl_PNG_Image.H \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/iostream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__assert \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__verbose_abort \
