@@ -1,4 +1,0 @@
-/Users/benjaminzou/Desktop/GroundStation/build/CMakeFiles/open_terminal.dir
-/Users/benjaminzou/Desktop/GroundStation/build/CMakeFiles/GroundStation.dir
-/Users/benjaminzou/Desktop/GroundStation/build/CMakeFiles/edit_cache.dir
-/Users/benjaminzou/Desktop/GroundStation/build/CMakeFiles/rebuild_cache.dir
